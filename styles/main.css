@@ -1,0 +1,53 @@
+.container {
+	display: flex;
+	background: #ccc;
+	flex-flow: row wrap;
+}
+
+.container div {
+	background: #f1f1f1;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.menu {
+	height: 500px;
+	width: 200px;
+}
+
+.time {
+	height: 100px;
+	width: 300px;
+}
+
+.city {
+	height: 100px;
+	width: 500px;
+
+}
+
+.weather {
+	height: 100px;
+	width: 300px;
+}
+
+.language {
+	height: 100px;
+	width: 250px;
+}
+
+.currency {
+	height: 100px;
+	width: 250px;
+}
+
+.wind {
+	height: 200px;
+	width: 300px;
+}
+
+.quake {
+	height: 200px;
+	width: 500px;
+}
