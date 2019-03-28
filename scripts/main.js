@@ -55,7 +55,12 @@
 
 				var capital = document.getElementsByClassName('capital')[0];
 					capital.innerHTML = response.capital;
+
+				var flag = document.getElementsByClassName('flag')[0];
+					flag.innerHTML = response.flag;
 			})
+
+
 	}
 
 
