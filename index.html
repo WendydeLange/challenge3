@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
-	<script type="text/javascript" href="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
 	<title>SpaceX</title>
 </head>
 <body>
@@ -14,6 +14,12 @@
 			<div>
 				<p>avatar</p>
 			</div>
+
+			<form>
+				<input type="text" name="city" id="city" />
+				<input type="button" id="getWeather" value="Get information" />
+			</form>
+			
 			<h3>SpaceX</h3>
 
 
@@ -24,19 +30,24 @@
 		</div>
 
 		<div class="city">
-			<p>city here</p>
+			<p>Capital of country</p>
+			<div class="capital"></div>
 		</div>
 
 		<div class="weather">
-			<p>weather here</p>
+			<p>Weather</p>
+			<div id="weather"></div>
+			
 		</div>
 
 		<div class="language">
-			<p>language here</p>
+			<p>Language</p>
+			<div class="langres"></div>
 		</div>
 
 		<div class="currency">
-			<p>currency here</p>
+			<p>Currency</p>
+			<div class="moneys"></div>
 		</div>
 
 		<div class="wind">

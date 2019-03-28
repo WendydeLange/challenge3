@@ -50,6 +50,10 @@
 	width: 1fr;
 }
 
+#weather {
+	padding: 5px;
+}
+
 .language {
 	display: grid;
 	grid-column: 3/4;
