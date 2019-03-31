@@ -1,12 +1,19 @@
+body {
+	background: #D9D7DD;
+	font-family: roboto mono, roboto, helvetica;
+	font-size: 15px;
+}
+
 .container {
 	display: grid;
-	background: #ccc;
+	/*background: #214F4B;*/
+	background-image: linear-gradient(to bottom right, #EE4266, #FFCE30);
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	border-radius: 10px;
 }
 
 .container div {
-	background: #f1f1f1;
+	background: #D9D7DD;
 	margin: 10px;
 	padding: 20px;
 	border-radius: 10px;
@@ -15,28 +22,41 @@
 .menu {
 	display: grid;
 	grid-column: 1/2;
-	grid-row: 1/5;
-	height: 4fr;
+	grid-row: 1/3;
+	height: 2fr;
 	width: 1fr;
 }
 
-.menu div {
-	background: #ccc;
-	width: 100px;
-	height: 100px;
-	margin: 5px;
-	border-radius: 10px;
+.form {
+	padding-top: 20px;
 }
 
-/*form button {
-	padding: 2px;
+
+.button {
+	padding: 5px;
+	background-image: linear-gradient(to bottom right, #EE4266, #FFCE30);
+	color: black;
+	text-decoration: none;
+	font-size: 15px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
 }
-*/
+
+.button:hover {
+	background: #D9D7DD;
+	background-image: none; 
+	color: black; 
+	border: 2px solid #EE4266;
+
+}
+
 .weather {
 	display: grid;
 	grid-column: 2/4;
 	height: 1fr;
 	width: 1fr;
+	text-align: center;
 }
 
 .city {
@@ -44,15 +64,9 @@
 	grid-column: 4/6;
 	height: 1fr;
 	width: 2fr;
+	text-align: center;
 
 }
-
-/*.weather {
-	display: grid;
-	grid-column: 2/3;
-	height: 1fr;
-	width: 1fr;
-}*/
 
 #weather {
 	padding: 5px;
@@ -63,6 +77,7 @@
 	grid-column: 2/4;
 	height: 1fr;
 	width: 1fr;
+	text-align: center;
 }
 
 .currency {
@@ -70,21 +85,7 @@
 	grid-column: 4/6;
 	height: 1fr;
 	width: 1fr;
-}
-
-.wind {
-	display: grid;
-	grid-column: 2/3;
-	height: 1fr;
-	width: 1fr;
-}
-
-.quake {
-	display: grid;
-	grid-column: 3/6;
-	grid-row: 3/5;
-	height: 2fr;
-	width: 2fr;
+	text-align: center;
 }
 
 
@@ -119,26 +120,20 @@
 	.weather {
 		display: grid;
 		grid-column: 1/6;
-		grid-row: 2/3;
+		grid-row: 3/3;
 		height: 100px;
 		width: 100% auto;
+		padding: 5px;
 	}	
 
 	.city {
 		display: grid;
 		grid-column: 1/6;
-		grid-row: 3/4;
+		grid-row: 2/3;
 		height: 100px;
 		width: 100% auto;
 	}
 
-	/*.weather {
-		display: grid;
-		grid-column: 1/5;
-		grid-row: 4/5;
-		height: 100px;
-		width: 100% auto;
-	}*/
 
 	.language {
 		display: none;
@@ -148,21 +143,6 @@
 		display: none;
 	}
 
-	.wind {
-		display: none;
-	}
-
-	.flag {
-		display: none;
-	}
-
-	.quake {
-		display: grid;
-		grid-column: 1/6;
-		grid-row: 5/6;
-		height: 100px;
-		width: 100% auto;
-	}
 }
 
 @media only screen and (min-width: 500px) {
@@ -182,66 +162,50 @@
 		width: 100% auto;
 	}
 
-	.quake {
-		display: grid;
-		grid-column: 1/6;
-		grid-row: 6/7;
-	}
  }
 
- @media only screen and (min-width: 751px) {
- 	.quake {
- 		display: grid;
- 		grid-row: 7/8;
- 	}
-
- 	.wind {
- 		display: grid;
- 		grid-column: 1/5;
- 		grid-row: 6/7;
- 		height: 100px;
- 		width: 100% auto;
- 	}
-
- }
-
- @media only screen and (min-width: 800px) {
- 	.weather {
- 		display: grid;
-		grid-column: 1/3;
-		grid-row: 2/3;
-		height: 100px;
-		width: 100% auto;
+ @media only screen and (min-width: 650px) {
+ 	.container {
+ 		margin: 50px;
  	}
 
  	.city {
  		display: grid;
-		grid-column: 3/5;
+		grid-column: 3/6;
 		grid-row: 2/3;
-		height: 100px;
-		width: 100% auto;
  	}
+
+ 	.weather {
+ 		display: grid;
+		grid-column: 1/3;
+		grid-row: 2/3;
+ 	}
+
  }
 
  @media only screen and (min-width: 900px) {
+ 	.form {
+ 		padding-top: 100px;
+ 	}
+
  	.menu {
 		display: grid;
 		grid-column: 1/2;
-		grid-row: 1/5;
+		grid-row: 1/3;
 		width: 100% auto;
-		height: 400px;
+		height: 270px;
 	}
 
 	.weather {
 		display: grid;
-		grid-column: 2/3;
+		grid-column: 2/4;
 		grid-row: 1/2;
 
 	}
 
 	.city {
 		display: grid;
-		grid-column: 3/5;
+		grid-column: 4/6;
 		grid-row: 1/2;
 
 	}
@@ -254,25 +218,14 @@
 
 	.language {
 		display: grid;
-		grid-column: 3/4;
+		grid-column: 2/4;
 		grid-row: 2/3;
 	}
 
 	.currency {
 		display: grid;
-		grid-column: 4/5;
+		grid-column: 4/6;
 		grid-row: 2/3;
 	}
 
-	.wind {
-		display: grid;
-		grid-column: 2/3;
-		grid-row: 3/4;
-	}
-
-	.quake {
-		display: grid;
-		grid-column: 3/5;
-		grid-row: 3/5;
-	}
 }
