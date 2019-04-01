@@ -1,3 +1,4 @@
+ // When the page unload activate the function
  window.onload = function(){
 	function getAPIdata() {
 		var url = "https://api.openweathermap.org/data/2.5/weather";
@@ -61,7 +62,7 @@
 
 	}
 
-
+	// Appear this when the api won't work
 	function onAPIError(error) {
 		var weatherBox = document.getElementById('weather');
 		weatherBox.innerHTML = 'No weather data available <br /> Did you enter a valid city?';
