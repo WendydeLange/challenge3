@@ -1,6 +1,6 @@
  window.onload = function(){
 	function getAPIdata() {
-		var url = "http://api.openweathermap.org/data/2.5/weather";
+		var url = "https://api.openweathermap.org/data/2.5/weather";
 		var apiKey ="f8413a407eebc9486e226640e6cf9ab9";
 		var city = document.getElementById("city").value;
 
